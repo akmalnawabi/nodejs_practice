@@ -22,11 +22,14 @@ const productSchema = moongose.Schema({
     default: Date.now(),
   },
   company: {
-    name: String,
-    enum: {
-      values: ["benz", "BMW"],
-      message: '{VALUE} is not supported'
+    name: {
+      type: String,
+      enum: {
+        values: ["benz", "BMW"],
+        message: "{VALUE} is not supported",
+      },
     },
+
     // enum: ['benz', 'BMW']
   },
 });
