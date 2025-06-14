@@ -29,8 +29,6 @@ const productSchema = moongose.Schema({
         message: "{VALUE} is not supported",
       },
     },
-
-    // enum: ['benz', 'BMW']
   },
 });
 
